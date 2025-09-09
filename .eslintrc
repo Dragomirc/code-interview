@@ -1,0 +1,31 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "ignorePatterns": ["dist/**", "build/**", "coverage/**"],
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:security/recommended"
+  ],
+  "rules": {
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-throw-literal": 2,
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "argsIgnorePattern": "^_" }
+    ],
+    "no-console": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}

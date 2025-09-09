@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "module": "esnext",
+    "lib": ["esnext"],
+    "target": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "rootDir": "./",
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["**/*.ts", "**/*.js"],
+  "exclude": ["node_modules", "cdk.out"]
+}

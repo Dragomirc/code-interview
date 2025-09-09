@@ -1,0 +1,8 @@
+
+cdk.out/
+
+reports/
+node_modules/
+dist/
+.DS_Store
+.env
