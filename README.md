@@ -8,7 +8,7 @@ A Fastify-based REST API for managing publications with MongoDB integration.
 
 | Method | Endpoint | Description | Request Body |
 |--------|----------|-------------|-------------|
-| `GET` | `/pubs` | List all publications with optional filters | `/pubs?publisher=reach` |
+| `GET` | `/pubs` | List all publications with optional filters eg: `/pubs?publisher=reach` | - |
 | `POST` | `/publications` | Create a new publication | `{ "domain": "liverpoolecho.co.uk", "publisher": "reach", "targets": [ { "feedType": "google_sitemap",  "entrypoint": "https://www.liverpoolecho.co.uk/map_news.xml" } ]}` |
 | `GET` | `/:id/publications` | Get a specific publication by ID | - |
 
@@ -23,9 +23,6 @@ npm run dev
 
 # Build
 npm run build
-
-# Test
-npm test
 ```
 
 ## Project Structure
@@ -49,8 +46,6 @@ src/
 - **Framework**: Fastify
 - **Database**: MongoDB with Mongoose
 - **Validation**: Zod
-- **Documentation**: Swagger/OpenAPI
-- **Testing**: Jest
 - **Language**: TypeScript
 
 ## Environment
